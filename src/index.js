@@ -4,7 +4,7 @@ const http = require('http');
 const url = require('url');
 const repl =require('node:repl');
 const slugify = require('slugify');
-const replaceTemplate = require('./modules/replaceTemplates.js')
+const replaceTemplate = require('./modules/replaceTemplates');
 
 
 ////////////////////////// FILE //////////////////////////////
@@ -75,7 +75,7 @@ const replaceTemplate = require('./modules/replaceTemplates.js')
         // console.log(tempOverview);
         // console.log(dataObj);
         const slugs = dataObj.map(el => slugify(el.productName,{lower:true}))
-        console.log(slugs);
+        // console.log(slugs);
             
 
         const server = http.createServer((req,res) =>{
@@ -102,13 +102,14 @@ const replaceTemplate = require('./modules/replaceTemplates.js')
             }else if(pathname === '/product'){
                 res.writeHead(200,{'Content-type':'text/html'});
                 const product = dataObj[query.id];
-                const output =replaceTemplate(tempProduct,product);
+                const output = replaceTemplate(tempProduct,product);
+                // console.log(product);
                 res.end(output)
 
                 // API
             }else if(pathname === '/api'){
 
-                // res.writeHead(200,{'Content-type':'application/json'});
+                res.writeHead(200,{'Content-type':'application/json'});
                 res.end(data);
           
                 // NOT FOUND
@@ -121,8 +122,8 @@ const replaceTemplate = require('./modules/replaceTemplates.js')
             }
         });
 
-        server.listen(8000,'127.0.0.1',()=>{
-            console.log('Server is running on port 8000 :');
+        server.listen(6000,'127.0.0.1',()=>{
+            console.log('Server is running on port 6000 :');
         })
 
 

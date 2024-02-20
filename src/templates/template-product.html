@@ -13,7 +13,7 @@
       href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/155/ear-of-maize_1f33d.png"
     />
 
-    <title>{$PRODUCTNAME$} {$IMAGE$} /// NODE FARM</title>
+    <title>{PRODUCTNAME} {IMAGE} /// NODE FARM</title>
 
     <style>
       *,
@@ -25,7 +25,7 @@
       }
 
       html {
-        font-size: 62.5%;
+        font-size: 62.5;
         box-sizing: border-box;
       }
 
@@ -51,15 +51,15 @@
       h1::before {
         content: '';
         display: block;
-        height: 65%;
-        width: 49%;
+        height: 65;
+        width: 49;
         position: absolute;
-        top: 105%;
-        left: 50%;
+        top: 105;
+        left: 50;
         background: linear-gradient(to bottom, #9be15d, #00e3ae);
         opacity: 0.8;
         z-index: -1;
-        transform: skewY(370deg) translate(-50%, -50%);
+        transform: skewY(370deg) translate(-50, -50);
       }
 
       .container {
@@ -85,8 +85,8 @@
       .product__hero::before {
         content: '';
         display: block;
-        height: 100%;
-        width: 100%;
+        height: 100;
+        width: 100;
         position: absolute;
         top: 0;
         left: 0;
@@ -155,7 +155,7 @@
         height: 11rem;
         width: 11rem;
         background-image: linear-gradient(to bottom, #9be15d, #00e3ae);
-        border-radius: 50%;
+        border-radius: 50;
         transform: rotate(15deg);
         box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
         display: flex;
@@ -275,31 +275,31 @@
           <span class="emoji-left">👈</span>Back
         </a>
         <div class="product__hero">
-          <span class="product__emoji product__emoji--1">{$IMAGE$}</span>
-          <span class="product__emoji product__emoji--2">{$IMAGE$}</span>
-          <span class="product__emoji product__emoji--3">{$IMAGE$}</span>
-          <span class="product__emoji product__emoji--4">{$IMAGE$}</span>
-          <span class="product__emoji product__emoji--5">{$IMAGE$}</span>
-          <span class="product__emoji product__emoji--6">{$IMAGE$}</span>
-          <span class="product__emoji product__emoji--7">{$IMAGE$}</span>
-          <span class="product__emoji product__emoji--8">{$IMAGE$}</span>
-          <span class="product__emoji product__emoji--9">{$IMAGE$}</span>
+          <span class="product__emoji product__emoji--1">{IMAGE}</span>
+          <span class="product__emoji product__emoji--2">{IMAGE}</span>
+          <span class="product__emoji product__emoji--3">{IMAGE}</span>
+          <span class="product__emoji product__emoji--4">{IMAGE}</span>
+          <span class="product__emoji product__emoji--5">{IMAGE}</span>
+          <span class="product__emoji product__emoji--6">{IMAGE}</span>
+          <span class="product__emoji product__emoji--7">{IMAGE}</span>
+          <span class="product__emoji product__emoji--8">{IMAGE}</span>
+          <span class="product__emoji product__emoji--9">{IMAGE}</span>
         </div>
-        <h2 class="product__name">{$PRODUCTNAME$}</h2>
+        <h2 class="product__name">{PRODUCTNAME}</h2>
         <div class="product__details">
-          <p><span class="emoji-left">🌍</span> From {$FROM$}</p>
-          <p><span class="emoji-left">❤️</span>{$NUTRIENTS$}</p>
-          <p><span class="emoji-left">📦</span> {$QUANTITY$}</p>
-          <p><span class="emoji-left">🏷</span> {$PRICE$}€</p>
+          <p><span class="emoji-left">🌍</span> From {FROM}</p>
+          <p><span class="emoji-left">❤️</span>{NUTRIENTS}</p>
+          <p><span class="emoji-left">📦</span> {QUANTITY}</p>
+          <p><span class="emoji-left">🏷</span> {PRICE}€</p>
         </div>
   
         <a href="#" class="product__link">
           <span class="emoji-left">🛒</span>
-          <span>Add to shopping card ({$PRICE$}€)</span>
+          <span>Add to shopping card ({PRICE}€)</span>
         </a>
   
         <p class="product__description">
-          {$DESCRIPTION$}
+          {DESCRIPTION}
 
       </figure>
       
